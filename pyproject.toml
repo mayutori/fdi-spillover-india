@@ -1,0 +1,23 @@
+[project]
+name = "fdi-spillover-india"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mayu Torigai", email = "262e137e@gsuite.kobe-u.ac.jp" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "linearmodels>=7.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "statsmodels>=0.14.6",
+]
+
+[project.scripts]
+fdi-spillover-india = "fdi_spillover_india:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
